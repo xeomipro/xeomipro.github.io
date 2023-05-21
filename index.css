@@ -15,14 +15,20 @@ a {
     position: relative;
     background-color: #29B473;
     overflow: hidden;
+    overflow-y: auto;
     box-shadow: inset 0px 0px 20px 0px;
+}
+.main .margin {
+    height: 100px;
 }
 .main {
     letter-spacing: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
+
 .main .inner {
     position: relative;
 }
@@ -104,6 +110,7 @@ a {
         font-size: 5vw;
     }
 }
+
 .sns-page {
 
 }
