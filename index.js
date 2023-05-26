@@ -6,15 +6,13 @@ window.addEventListener('DOMContentLoaded', () => {
     function check() {
         const windowHeight = window.innerHeight;
         const height = main.offsetHeight;
-        console.log(windowHeight < height);
-
         if(windowHeight > height) {
             style.innerText = ``;
             return;
         }
         style.innerText = `
-            .main {
-                display: block;
+            .main .canvas {
+                transform: scale(${(windowHeight / height).toFixed(2)});
             }
         `
     }
